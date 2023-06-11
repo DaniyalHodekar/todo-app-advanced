@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Todo app</title>
+<link rel="stylesheet" href="style.css"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div class="banner"></div>
+<div class="wrapper">
+  <header>
+    <h1>TODO</h1>
+    <button class="theme-button" aria-label="Toggle theme"><img class="icon" src="/images/icon-sun.svg" alt=""></button>
+  </header>
+  <main>
+    <form action="">
+      <label for="todo-input" class="visually-hidden">Enter task here</label>
+      <input type="text" id="todo-input" name="todo" placeholder="Create a new todo.." autocomplete="off">
+      <button class="add-btn" aria-label="Add task"></button>
+    </form>
+    <section>
+      <ul class="output">
+        
+      </ul>
+      <div class="information">
+        <p><span class="items-left">3</span> item<span class="item-even">s</span> left</p>
+          <div class="buttons">
+            <button class="show-all"aria-label="All tasks">All</button>
+            <button class="show-active"aria-label="Active tasks">Active</button>
+            <button class="show-completed"aria-label="Completed Tasks">Completed</button>
+          </div>
+          <button class="clear-complete" aria-label="Clear completed tasks">Clear Completed</button>
+      </div>
+    </section>
+    <div class="mobile-buttons">
+            <button class="show-all-mobile"aria-label="All tasks">All</button>
+            <button class="show-active-mobile"aria-label="Active tasks">Active</button>
+            <button class="show-completed-mobile"aria-label="Completed Tasks">Completed</button>
+          </div>
+
+          <p class="attribution">Coded by <span style="color:hsl(220, 98%, 61%)">Daniyal</span></p>
+  </main>
+</div>
+
+
+
+<template>
+  <li class="task">
+          <input type="checkbox" class="checkbox" aria-label="Mark as complete" data-list-item-checkbox>
+          <span data-list-text>Test task 1 Lorem, ipsum dolor.</span>
+          <button class="theme-button" aria-label="Delete task" ><img data-button-delete src="/images/icon-cross.svg" alt=""></button>
+        </li>
+</template>
+ 
+</body>
+</html>
