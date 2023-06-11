@@ -266,10 +266,8 @@ li > span {
 .attribution {
   font-size: .8rem;
   color: var(--Dark-Grayish-Blue);
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  text-align: center;
+  margin-top: 1rem;
 }
 
 ::-webkit-scrollbar {
